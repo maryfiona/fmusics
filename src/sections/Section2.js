@@ -21,21 +21,31 @@ const Section2 = () => {
       if (currentAudio) {
         currentAudio.pause();
       }
-  
-      if (audioRef.current.paused) {
-        audioRef.current.play();
-        setCurrentAudio(audioRef.current);
-      } else {
-        audioRef.current.pause();
-        setCurrentAudio(null);
-      }
-    };
+
+       
+      
+      
+    const audioRef = useRef(null);
+    const playAudio = () => {
+        if (audioRef.current.paused) {
+          audioRef.current.play();
+        } else {
+          audioRef.current.pause();
+          setCurrentAudio(null);
+        
+        }
+      };
+
+
+
+
       const audioRef1 = useRef(null);
     const playAudio1 = () => {
         if (audioRef1.current.paused) {
           audioRef1.current.play();
         } else {
           audioRef1.current.pause();
+        
         }
       };
       const audioRef2 = useRef(null);
@@ -104,13 +114,6 @@ const Section2 = () => {
 
 
         </>
-
-
-
-
-
-
-
 
     );
 }
