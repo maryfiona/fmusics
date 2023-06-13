@@ -9,8 +9,8 @@ import { FaInstagram, FaWhatsapp ,FaGithub} from 'react-icons/fa';
 const Footer = () => {
     return(
         <>
-        <footer className="music">
-            <div className="container">
+        <footer className="music ">
+            <div className="container-fluid bg-dark text-light musics">
                 <div className="row  justify-content-center">
                     <div className="col-md-12 text-center">
                         <h2 className="footer-heading">
@@ -23,11 +23,11 @@ const Footer = () => {
                         </h2>
                         <p className="menu">
                        <p> <a href="Home.js">Home</a></p>
-							  <p><a href="Home.js">Agent</a> </p>
+							  <p><a href="Home.js">section1</a> </p>
 
-							 <p><a href="Home.js">About</a></p>
-							<p><a href="Home.js">Listing</a> </p>
-							<p><a href="Home.js">Blog</a></p>
+							 <p><a href="Home.js">section2</a></p>
+							<p><a href="Home.js">Fotter</a> </p>
+						
 							<p><a href="Home.js">Contact</a></p>
 
                         </p>
@@ -46,8 +46,16 @@ const Footer = () => {
       
 
                 </div>
+                <div className="row mt-5">
+					<div className="col-md-12 text-center">
+						<p className="copyright">
+					  Copyright &copy; All rights reserved<i className="ion-ios-heart" aria-hidden="true"></i> by <a href="http://wa.me/+2349078398501" >fiotech</a>
+					 </p>
+					</div>
+				</div>
 
             </div>
+            
 
         </footer>
 		
