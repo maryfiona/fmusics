@@ -1,5 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import './Section2.css';
+
 import believe from './../assets/musics/artist-image/believe.jpg';
 import peace from './../assets/musics/artist-image/peace.jpg';
 import ajitu from './../assets/musics/artist-image/ajitu.jpg';
@@ -10,8 +11,14 @@ import AudioC from '../assets/musics/artist-audio/pe.mp3';
 import AudioD from '../assets/musics/artist-audio/be.mp3';
 
 const Section2 = () => {
+  
+ 
+  
   const audioRef = useRef(null);
   const [currentAudio, setCurrentAudio] = useState(null);
+  
+
+  
 
   const playAudio = () => {
     if (currentAudio) {
@@ -60,12 +67,38 @@ const Section2 = () => {
     AudioC,
     AudioD,
   ];
+
   const handleDownload = (downloadUrl) => {
     const link = document.createElement('a');
     link.href = downloadUrl;
     link.download = downloadUrl.substring(downloadUrl.lastIndexOf('/') + 1);
     link.click();
   };
+  const scrollPage = (direction) => {
+    const scrollOffset = window.innerHeight - 64; // Adjust the scroll offset as needed
+    const currentPosition = window.pageYOffset;
+
+    if (direction === 'up') {
+      window.scrollTo({ top: currentPosition - scrollOffset, behavior: 'smooth' });
+    } else if (direction === 'down') {
+      window.scrollTo({ top: currentPosition + scrollOffset, behavior: 'smooth' });
+    }
+  };
+  useEffect(() => {
+    // Scroll event listener
+    const handleScroll = () => {
+      // Handle scrolling logic here
+    };
+
+    // Add the event listener when the component mounts
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
 
   return (
     <>
@@ -118,6 +151,17 @@ const Section2 = () => {
           </div>
         </div>
       </div>
+     
+
+      <div className="scroll-buttons">
+        <button onClick={() => scrollPage('up')} className="scroll-button">
+          Scroll Up
+        </button>
+        <button onClick={() => scrollPage('down')} className="scroll-button">
+          Scroll Down
+        </button>
+      </div>
+      
     </>
   );
 };
