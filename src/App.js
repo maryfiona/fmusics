@@ -6,11 +6,18 @@ import Section2 from './sections/Section2';
 import Footer from './component/Footer';
 
 
+
 function App() {
+  
+  
   return (
     <>
+    
+  
+  
     <Landingpage />
     <Section1 />
+  
     <Section2 />
     <Footer />
 
