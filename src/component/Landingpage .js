@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from "react";
 import './Landingpage.css';
 // import LandingPage2 from './../assets/LandingPage2.jpg'
 // import LandingPage3 from './../assets/LandingPage3.jpg'
@@ -8,6 +8,8 @@ import './Landingpage.css';
 
 const Landingpage = () => {
     
+
+
     return (
         <>
 
@@ -61,11 +63,6 @@ const Landingpage = () => {
                     </div>
                     <button type="submit" className="btn btn-default">Submit</button>
                 </form>
-            </div>
-            <div>
-   
-
-
             </div>
 
 
