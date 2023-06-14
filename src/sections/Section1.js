@@ -83,7 +83,7 @@ const Section1 = () => {
                         </audio>
 
                         <button type="button" onClick={playAudio} className="btn btn-primary btn-block">play</button>
-                        <button onClick={() => handleDownload(downloadUrls[0])}>Download</button>
+                        <button className='public' onClick={() => handleDownload(downloadUrls[0])}>Download</button>
 
                     </div>
                     <div className="col-md-3">
@@ -93,7 +93,7 @@ const Section1 = () => {
                             <source   src={AudioB}></source>
                         </audio> 
                         <button onClick={playAudio1}  className="btn btn-primary btn-block ">play</button>
-                        <button onClick={() => handleDownload(downloadUrls[1])}>Download</button>
+                        <button className='public' onClick={() => handleDownload(downloadUrls[1])}>Download</button>
 
                     </div>
                     <div className="col-md-3">
@@ -103,7 +103,7 @@ const Section1 = () => {
                             <source  src={AudioC}></source>
                         </audio>
                         <button  onClick={playAudio2}  className="btn btn-primary btn-block ">play</button>
-                        <button onClick={() => handleDownload(downloadUrls[2])}>Download</button>
+                        <button className='public' onClick={() => handleDownload(downloadUrls[2])}>Download</button>
 
 
                     </div>
@@ -114,7 +114,7 @@ const Section1 = () => {
                             <source   src={AudioD}></source>
                         </audio> 
                         <button onClick={playAudio3}  className="btn btn-primary btn-block ">play</button>
-                        <button onClick={() => handleDownload(downloadUrls[3])}>Download</button>
+                        <button className='public' onClick={() => handleDownload(downloadUrls[3])}>Download</button>
 
                     </div>
                     

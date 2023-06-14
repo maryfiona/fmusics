@@ -1,3 +1,15 @@
 .hiddens{
     visibility: hidden;
 }
+.public{
+    background-color: black;
+    color: white;
+    margin-left: 3em;
+    border-radius: 109px;
+    width: 10em;
+    border: none;
+    outline: none;
+    
+
+  }
+  
