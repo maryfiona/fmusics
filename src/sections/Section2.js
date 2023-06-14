@@ -102,7 +102,7 @@ const Section2 = () => {
 
   return (
     <>
-      <div className="container">
+      <div className="container project">
         <h1>OLD SCHOOL</h1>
         <div className="row">
           <div className="col-md-3">
@@ -114,7 +114,7 @@ const Section2 = () => {
             <button type="button" onClick={playAudio} className="btn btn-primary btn-block">
               Play
             </button>
-            <button onClick={() => handleDownload(downloadUrls[0])}>Download</button>
+            <button className='public' onClick={() => handleDownload(downloadUrls[0])}>Download</button>
           </div>
           <div className="col-md-3">
             <img width="100%" height={254} className="" src={ajitu} alt="Aji" />
@@ -125,7 +125,7 @@ const Section2 = () => {
             <button onClick={playAudio1} className="btn btn-primary btn-block ">
               Play
             </button>
-            <button onClick={() => handleDownload(downloadUrls[1])}>Download</button>
+            <button className='public' onClick={() => handleDownload(downloadUrls[1])}>Download</button>
           </div>
           <div className="col-md-3">
             <img width="100%" className="" src={peace} alt="pe" />
@@ -136,7 +136,7 @@ const Section2 = () => {
             <button onClick={playAudio2} className="btn btn-primary btn-block ">
               Play
             </button>
-            <button onClick={() => handleDownload(downloadUrls[2])}>Download</button>
+            <button className='public' onClick={() => handleDownload(downloadUrls[2])}>Download</button>
           </div>
           <div className="col-md-3">
             <img width="100%" className="" src={believe} alt="be" />
@@ -147,7 +147,7 @@ const Section2 = () => {
             <button onClick={playAudio3} className="btn btn-primary btn-block ">
               Play
             </button>
-            <button onClick={() => handleDownload(downloadUrls[3])}>Download</button>
+            <button className='public' onClick={() => handleDownload(downloadUrls[3])}>Download</button>
           </div>
         </div>
       </div>

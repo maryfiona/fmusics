@@ -22,4 +22,18 @@ hiddens{
   .scroll-button:first-child {
     margin-right: 10px;
   }
+  .project{
+    padding-top: 10em;
+  }
+  .public{
+    background-color: black;
+    color: white;
+    margin-left: 3em;
+    border-radius: 109px;
+    width: 10em;
+    border: none;
+    outline: none;
+    
+
+  }
   
