@@ -21,7 +21,7 @@ const Footer = () => {
                             </p>
 
                         </h2>
-                        <p className="menu">
+                        <h6 className="menu">
                        <p> <a href="Home.js">Home</a></p>
 							  <p><a href="Home.js">section1</a> </p>
 
@@ -30,7 +30,7 @@ const Footer = () => {
 						
 							<p><a href="Home.js">Contact</a></p>
 
-                        </p>
+                        </h6>
 
 
                     </div>
