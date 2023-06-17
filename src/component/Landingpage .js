@@ -31,7 +31,12 @@ const Landingpage = () => {
                         
                     
                 
-
+                <form className="navbar-form navbar-left" action="/action_page.php">
+                    <div className="form-group">
+                        <input type="text" className="form-control ariyo" placeholder="Search " />
+                    </div>
+                    <button type="submit" className="btn btn-default">Submit</button>
+                </form>
             </div>
 
 
