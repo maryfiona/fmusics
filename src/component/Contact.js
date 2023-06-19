@@ -16,7 +16,7 @@ const Contact =  () => {
             <img width={400} src={imgs} alt="Imagee"/>
             </div>
             <div className="col-md-6  b">
-            <form className="contact1-form validate-form">
+            <form className="contact1-form validate-form" action="https://formspree.io/f/xqkorgvp" method="POST">
 				<span className="contact1-form-title ">
 					Get in touch
 				</span>

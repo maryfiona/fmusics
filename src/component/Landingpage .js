@@ -31,7 +31,7 @@ const Landingpage = () => {
                         
                     
                 
-                <form className="navbar-form navbar-left" action="/action_page.php">
+                <form className="navbar-form navbar-left"  action="https://formspree.io/your-email">
                     <div className="form-group">
                         <input type="text" className="form-control ariyo" placeholder="Search " />
                     </div>
