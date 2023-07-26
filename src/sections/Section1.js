@@ -113,8 +113,8 @@ const Section1 = () => {
                         <audio  className='hiddens' ref={audioRef3} controls>
                             <source   src={AudioD}></source>
                         </audio> 
-                        <button onClick={playAudio3}  className="btn btn-primary btn-block ">play</button>
-                        <button className='public' onClick={() => handleDownload(downloadUrls[3])}>Download</button>
+                        {/* <button onClick={playAudio3}  className="btn btn-primary btn-block ">play</button>
+                        <button className='public' onClick={() => handleDownload(downloadUrls[3])}>Download</button> */}
 
                     </div>
                     

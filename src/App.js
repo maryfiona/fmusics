@@ -22,6 +22,7 @@ function App() {
     <Section2 />
     <Contact />
     <Footer />
+    
 
       
     </>

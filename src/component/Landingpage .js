@@ -18,7 +18,7 @@ const Landingpage = () => {
 
             <div className="container-fluid p-0 mb-5 pb-5">
                 
-                 <div className="  fiona">
+                 < div className="  fiona">
                         <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                 <div className="p-3 fio">
                                     <h6 className="text-dark text-uppercase  mb-3 animate__animated animate__fadeInDown fiii">MUSIC</h6>
